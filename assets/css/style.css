@@ -1,0 +1,33 @@
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img{
+  backface-visibility: hidden;
+}
+
+.hv{
+  @apply bg-indigo-200 w-1/3 h-125 overflow-hidden relative flex items-end;
+}
+
+.hv img{
+  @apply absolute object-cover object-right h-125 transform duration-500;
+}
+
+.hv .overlay{
+  @apply bg-black opacity-40 absolute h-125 w-full z-1;
+}
+
+.hv .content {
+  @apply z-1 p-5 text-white;
+}
+
+.hv .content span.category{
+  @apply bg-green-700 text-xs p-1 px-5 font-semibold rounded-md;
+}
+
+.hv .content h1{
+  @apply text-2xl my-2;
+}
